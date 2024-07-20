@@ -18,7 +18,7 @@ const NavbarComponent = () => {
           <Nav className="me-auto">
            <Link to='/todaysdeal' className='no-underline'> <Nav.Link href="#home" className='mx-5'>Today's Deals</Nav.Link></Link>
             <Nav.Link href="#features" className='mx-4'>Gift Cards</Nav.Link>
-            <Nav.Link href="#pricing" className='mx-4'>Registry</Nav.Link>
+           <Link to='/registry' className='no-underline'><Nav.Link href="#pricing" className='mx-4'>Registry</Nav.Link></Link> 
             </Nav>
             <Link to='/cart'>
             <Nav className='ms-auto'><BsCart4 className='fs-4 pr-1' /> Cart ({totalQuantity})</Nav>
