@@ -14,7 +14,7 @@ const NavbarComponent = () => {
     <div className='sticky-navbar'>
     <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-         <Link to='/' className='no-underline'><Navbar.Brand href="#home">Ecommerce</Navbar.Brand></Link> 
+         <Link to='/ecommerceapp' className='no-underline'><Navbar.Brand href="#home">Ecommerce</Navbar.Brand></Link> 
           <Nav className="me-auto">
            <Link to='/todaysdeal' className='no-underline'> <Nav.Link href="#home" className='mx-5'>Today's Deals</Nav.Link></Link>
             <Nav.Link href="#features" className='mx-4'>Gift Cards</Nav.Link>

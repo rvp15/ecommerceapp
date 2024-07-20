@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Link} from 'react-router-dom';
 
 const ErrorPage = () => {
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
     <h1>404</h1>
     <p>Page Not Found</p>
-    <a href="/">Go to Home</a>
+    <Link to='/ecommerceapp'>Go to Home</Link>
   </div>
   )
 }
