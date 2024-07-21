@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkecommerceapp4=self.webpackChunkecommerceapp4||[]).push([[718],{8718:(e,c,s)=>{s.r(c),s.d(c,{default:()=>p});s(5043);var a=s(579);const p=()=>(0,a.jsx)("div",{children:"Registry Page"})}}]);
+//# sourceMappingURL=718.fc686a45.chunk.js.map

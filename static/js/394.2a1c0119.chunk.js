@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkecommerceapp4=self.webpackChunkecommerceapp4||[]).push([[394],{394:(e,c,s)=>{s.r(c),s.d(c,{default:()=>p});s(5043);var a=s(579);const p=()=>(0,a.jsx)("div",{children:(0,a.jsx)("h1",{children:"Keep watching for today's Top Deals"})})}}]);
+//# sourceMappingURL=394.2a1c0119.chunk.js.map
