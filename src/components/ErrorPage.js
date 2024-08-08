@@ -6,7 +6,7 @@ const ErrorPage = () => {
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
     <h1>404</h1>
     <p>Page Not Found</p>
-    <Link to='/ecommerceapp'>Go to Home</Link>
+    <Link to='/'>Go to Home</Link>
   </div>
   )
 }
