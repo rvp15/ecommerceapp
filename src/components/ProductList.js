@@ -4,26 +4,28 @@ import { useSelector, useDispatch } from "react-redux";
 import { allProducts } from "../slices/productSlice";
 import { GrFormPrevious } from "react-icons/gr";
 import { MdOutlineNavigateNext } from "react-icons/md";
+import useProductApi from "../utils/useProductApi";
+import Shimmer from "./Shimmer";
 
 const ProductList = () => {
-  const dispatch = useDispatch();
   const filteredProducts = useSelector((state) => state.product.filteredProducts);
   const [page,setPage] = useState(1);
 
-  const fetchProducts = async () => {
-    const response = await fetch("https://dummyjson.com/products?limit=100");
-    const data = await response.json();
-    console.log(data.products)
-    dispatch(allProducts(data.products));
-  };
+useProductApi(); // custome Hook
+  // const fetchProducts = async () => {
+  //   const response = await fetch("https://dummyjson.com/products?limit=100");
+  //   const data = await response.json();
+  //   console.log(data.products)
+  //   dispatch(allProducts(data.products));
+  // };
   const handleSelectPage =(selectedPage)=>{
 setPage(selectedPage)
   }
 
-  useEffect(() => {
-    fetchProducts();
-  },[]); // Empty dependency array to call only once on mount
-
+  // useEffect(() => {
+  //   fetchProducts();
+  // },[]); // Empty dependency array to call only once on mount
+ if(filteredProducts === null) return <Shimmer/>
   return (
     <div className="product-list">
       <div className="container text-center product-wrapper">
